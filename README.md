@@ -1,2 +1,2 @@
-# nvim
-Neovim configuration. Parts stollen...
+## nvim
+**Neovim** config. Parts are definitely stolen... enjoy.
