@@ -22,24 +22,16 @@ cmp.setup({
         { name = 'vsnip' },
         { name = 'buffer' },
         { name = 'git' },
+        { name = 'cmdline' },
     })
 })
 
 cmp.setup.cmdline(':', {
     mapping = cmp.mapping.preset.cmdline(),
     sources = cmp.config.sources({
-        { name = 'cmdline' }
-    })
+        { name = 'cmdline' },
+    }),
 })
-
-
-
--- cmp.setup.filetype('gitcommit', {
---     sources = cmp.config.sources({
---     }, {
---         { name = 'buffer' },
---     })
--- })
 
 -- cmp.setup.cmdline({ '/', '?' }, {
 --     mapping = cmp.mapping.preset.cmdline(),
@@ -47,4 +39,3 @@ cmp.setup.cmdline(':', {
 --         { name = 'buffer' }
 --     }
 -- })
-

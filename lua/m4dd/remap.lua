@@ -13,6 +13,19 @@ vim.keymap.set('n', 'Q', '<nop>') -- Don't need this
 
 vim.keymap.set('n', '<leader>x', '<cmd>!chmod +x %<CR>', { silent = true })
 
+-- Yes still needed
+vim.keymap.set('n', '<C-Z>', 'u')
+vim.keymap.set('n', '<C-Y>', '<C-R>')
+vim.keymap.set('n', '<C-S-Right>', '<C-O>$')
+vim.keymap.set('n', '<C-S-Left>', '<C-O>0')
+vim.keymap.set('i', '<C-BS>', '<C-w>')
+vim.keymap.set('i', '<C-h>', '<C-w>')
+vim.keymap.set('i', '<C-S-Right>', '<C-O>$')
+vim.keymap.set('i', '<C-S-Left>', '<C-O>0')
+vim.keymap.set('i', '<C-Z>', '<C-O>u')
+vim.keymap.set('i', '<C-Y>', '<C-O><C-R>')
+
+
 -- Search & replace
 vim.keymap.set('n', '<C-h>', ':%s/')
 vim.keymap.set('v', '<C-h>', ':s/')

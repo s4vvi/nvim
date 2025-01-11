@@ -27,6 +27,8 @@ vim.call('plug#begin', '~/.config/nvim/plugged')
     Plug 'folke/trouble.nvim'
     Plug 'folke/zen-mode.nvim'
     Plug 'tpope/vim-fugitive'
+    Plug 'williamboman/mason.nvim'
+    Plug 'mhartington/formatter.nvim'
     Plug (
         'ThePrimeagen/harpoon', {
             branch='harpoon2',
