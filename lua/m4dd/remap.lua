@@ -25,10 +25,24 @@ vim.keymap.set('i', '<C-S-Left>', '<C-O>0')
 vim.keymap.set('i', '<C-Z>', '<C-O>u')
 vim.keymap.set('i', '<C-Y>', '<C-O><C-R>')
 
-
 -- Search & replace
 vim.keymap.set('n', '<C-h>', ':%s/')
 vim.keymap.set('v', '<C-h>', ':s/')
+
+-- LSP
+vim.keymap.set('n', '<leader>lr', '<cmd>LspRestart<cr>',
+    {silent = true, noremap = true}
+)
+
+-- Tmux Integration
+local nvim_tmux_nav = require("nvim-tmux-navigation")
+nvim_tmux_nav.setup {
+    disable_when_zoomed = true
+}
+vim.keymap.set('n', "<M-h>", nvim_tmux_nav.NvimTmuxNavigateLeft)
+vim.keymap.set('n', "<M-j>", nvim_tmux_nav.NvimTmuxNavigateDown)
+vim.keymap.set('n', "<M-k>", nvim_tmux_nav.NvimTmuxNavigateUp)
+vim.keymap.set('n', "<M-l>", nvim_tmux_nav.NvimTmuxNavigateRight)
 
 -- Telescope
 vim.keymap.set('n', '<leader>ff', '<cmd>Telescope find_files<cr>', { silent = true })
