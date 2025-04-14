@@ -1,5 +1,9 @@
 local lsp = require('lspconfig')
 
+vim.diagnostic.config({
+    virtual_text = true,
+})
+
 lsp.phpactor.setup {underline=false}
 lsp.pylsp.setup {}
 lsp.gopls.setup {}
