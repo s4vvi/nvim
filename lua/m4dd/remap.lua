@@ -28,6 +28,11 @@ vim.keymap.set('i', '<C-Y>', '<C-O><C-R>')
 -- Search & replace
 vim.keymap.set('n', '<C-h>', ':%s/')
 vim.keymap.set('v', '<C-h>', ':s/')
+vim.keymap.set('n', '<C-k>', ':%s/\\(.*\\)')
+vim.keymap.set('v', '<C-k>', ':s/\\(.*\\)')
+
+-- Exec
+vim.keymap.set('n', '<C-j>', ':%!')
 
 -- LSP
 vim.keymap.set('n', '<leader>lr', '<cmd>LspRestart<cr>',
