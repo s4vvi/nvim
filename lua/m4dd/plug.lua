@@ -30,6 +30,8 @@ vim.call('plug#begin', '~/.config/nvim/plugged')
     Plug 'williamboman/mason.nvim'
     Plug 'mhartington/formatter.nvim'
     Plug 'alexghergh/nvim-tmux-navigation'
+    Plug "s3rvac/vim-syntax-yara"
+    Plug "s4vvi/nvim-velo"
     Plug (
         'ThePrimeagen/harpoon', {
             branch='harpoon2',
