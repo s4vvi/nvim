@@ -31,7 +31,6 @@ vim.call('plug#begin', '~/.config/nvim/plugged')
     Plug 'mhartington/formatter.nvim'
     Plug 'alexghergh/nvim-tmux-navigation'
     Plug "s3rvac/vim-syntax-yara"
-    Plug "s4vvi/nvim-velo"
     Plug (
         'ThePrimeagen/harpoon', {
             branch='harpoon2',
@@ -43,5 +42,14 @@ vim.call('plug#begin', '~/.config/nvim/plugged')
     )
     Plug (
         'catppuccin/nvim', {as='catppuccin'}
+    )
+    Plug 's4vvi/nvim-velo'
+    Plug (
+        'MeanderingProgrammer/render-markdown.nvim', {
+            dependecies = {
+                'nvim-treesitter/nvim-treesitter',
+                'nvim-mini/mini.nvim',
+            }
+        }
     )
 vim.call('plug#end')
