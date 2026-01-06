@@ -1,7 +1,7 @@
 -- Leader?
 -- Stolen binds I know uwu 
 vim.g.mapleader = ' '
-vim.keymap.set('n', '<leader>pv', vim.cmd.Ex) -- Directory view / Explore
+vim.keymap.set('n', '<leader>o', '<cmd>Explore<CR>') -- Directory view / Explore
 
 vim.keymap.set('v', 'J', ':m \'>+1<CR>gv=gv') -- Move current line down
 vim.keymap.set('v', 'K', ':m \'<-2<CR>gv=gv') -- Move current line up
@@ -33,6 +33,7 @@ vim.keymap.set('v', '<C-k>', ':s/\\(.*\\)')
 
 -- Exec
 vim.keymap.set('n', '<C-j>', ':%!')
+vim.keymap.set('v', '<leader>e', ':w !bash<CR>')
 
 -- LSP
 vim.keymap.set('n', '<leader>lr', '<cmd>LspRestart<cr>',
