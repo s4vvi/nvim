@@ -23,6 +23,7 @@ vim.call('plug#begin', '~/.config/nvim/plugged')
     Plug 'hrsh7th/nvim-cmp'
     Plug 'hrsh7th/vim-vsnip'
     Plug 'hrsh7th/vim-vsnip-integ'
+    Plug 'f3fora/cmp-spell'
     Plug 'mbbill/undotree'
     Plug 'folke/trouble.nvim'
     Plug 'folke/zen-mode.nvim'

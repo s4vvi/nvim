@@ -57,6 +57,7 @@ vim.keymap.set('n', '<leader>ff', '<cmd>Telescope find_files<cr>', { silent = tr
 vim.keymap.set('n', '<leader>fg', '<cmd>Telescope live_grep<cr>', { silent = true })
 vim.keymap.set('n', '<leader>fb', '<cmd>Telescope buffers<cr>', { silent = true })
 vim.keymap.set('n', '<leader>fh', '<cmd>Telescope help_tags<cr>', { silent = true })
+vim.keymap.set('n', '<leader>fs', '<cmd>Telescope spell_suggest<cr>', { silent = true })
 
 -- Undotree
 vim.keymap.set('n', '<leader>u', '<cmd>UndotreeToggle<cr>', { silent = true })

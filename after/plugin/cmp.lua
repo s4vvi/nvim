@@ -23,6 +23,7 @@ cmp.setup({
         { name = 'buffer' },
         { name = 'git' },
         { name = 'cmdline' },
+        { name = 'spell' },
     })
 })
 
