@@ -2,7 +2,11 @@ Plug = vim.fn['plug#']
 vim.call('plug#begin', '~/.config/nvim/plugged')
     Plug 'tpope/vim-sensible'
     Plug 'kyazdani42/nvim-web-devicons'
-    Plug 'nvim-treesitter/nvim-treesitter'
+    Plug (
+			'nvim-treesitter/nvim-treesitter', {
+				branch="master"
+			}
+		)
     Plug 'windwp/nvim-autopairs'
     Plug 'Pocco81/auto-save.nvim'
     Plug 'nvim-lua/plenary.nvim'
@@ -48,8 +52,10 @@ vim.call('plug#begin', '~/.config/nvim/plugged')
     Plug (
         'MeanderingProgrammer/render-markdown.nvim', {
             dependecies = {
-                'nvim-treesitter/nvim-treesitter',
                 'nvim-mini/mini.nvim',
+								'nvim-treesitter/nvim-treesitter', {
+									branch="master"
+								}
             }
         }
     )
