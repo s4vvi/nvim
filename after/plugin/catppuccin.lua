@@ -3,7 +3,7 @@ require('catppuccin').setup {
     color_overrides = {
         all = {
             text = '#E1E1E1',
-            surface1 = '#64DBFF',
+            surface1 = '#d787ff',
             mantle = '#222222'
         },
     },
@@ -15,8 +15,8 @@ require('catppuccin').setup {
 vim.cmd.colorscheme 'catppuccin'
 vim.api.nvim_exec(
 [[
-hi Visual guifg=#0FA4FF guibg=#222222 gui=none
+hi Visual guifg=#61538d guibg=#222222 gui=none
 hi Search guifg=#FFAF87 guibg=#222222 gui=none
-hi EndOfBuffer guifg=#0FA4FF
-hi ColorColumn guibg=#268FAC
+hi EndOfBuffer guifg=#61538d
+hi ColorColumn guibg=#61538d
 ]],true)
