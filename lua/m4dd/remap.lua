@@ -35,6 +35,10 @@ vim.keymap.set('v', '<C-k>', ':s/\\(.*\\)')
 vim.keymap.set('n', '<C-j>', ':%!')
 vim.keymap.set('v', '<leader>e', ':w !bash<CR>')
 
+-- spell
+vim.keymap.set('n', '<leader>se', ':set spelllang=en_US<cr>')
+vim.keymap.set('n', '<leader>sl', ':set spelllang=lv<cr>')
+
 -- LSP
 vim.keymap.set('n', '<leader>lr', '<cmd>LspRestart<cr>',
     {silent = true, noremap = true}
